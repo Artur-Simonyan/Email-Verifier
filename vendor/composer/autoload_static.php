@@ -4,18 +4,45 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit6c42840d261796dd15f1b2baee6e0a2f
+class ComposerStaticInite7fc16e13395af62abafc87dcf86190c
 {
+    public static $prefixLengthsPsr4 = array (
+        'm' => 
+        array (
+            'myNamespace\\' => 12,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'myNamespace\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'm' => 
+        array (
+            'myNamespace\\' => 
+            array (
+                0 => __DIR__ . '/../..' . '/src',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'EmailVerifier\\EmailVerifierConstants' => __DIR__ . '/../..' . '/src/EmailVerifierConstants.php',
-        'EmailVerifier\\VerifyMail' => __DIR__ . '/../..' . '/src/VerifyMail.php',
+        'EmailVerifier\\EmailVerifierConstants' => __DIR__ . '/../..' . '/src/EmailVerifier/EmailVerifierConstants.php',
+        'EmailVerifier\\VerifyMail' => __DIR__ . '/../..' . '/src/EmailVerifier/VerifyMail.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInit6c42840d261796dd15f1b2baee6e0a2f::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInite7fc16e13395af62abafc87dcf86190c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInite7fc16e13395af62abafc87dcf86190c::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInite7fc16e13395af62abafc87dcf86190c::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInite7fc16e13395af62abafc87dcf86190c::$classMap;
 
         }, null, ClassLoader::class);
     }

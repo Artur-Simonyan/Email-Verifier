@@ -7,6 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
-    'EmailVerifier\\EmailVerifierConstants' => $baseDir . '/src/EmailVerifierConstants.php',
-    'EmailVerifier\\VerifyMail' => $baseDir . '/src/VerifyMail.php',
+    'EmailVerifier\\EmailVerifierConstants' => $baseDir . '/src/EmailVerifier/EmailVerifierConstants.php',
+    'EmailVerifier\\VerifyMail' => $baseDir . '/src/EmailVerifier/VerifyMail.php',
 );

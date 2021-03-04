@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '6918a014534b3760e8009fe67a19202dc504aec4',
+    'reference' => '8f26356297ee4ac97fecf9f1d3a9e7fba0a50c27',
     'name' => 'smnnartur/emailverifier',
   ),
   'versions' => 
@@ -42,7 +42,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '6918a014534b3760e8009fe67a19202dc504aec4',
+      'reference' => '8f26356297ee4ac97fecf9f1d3a9e7fba0a50c27',
     ),
   ),
 );
