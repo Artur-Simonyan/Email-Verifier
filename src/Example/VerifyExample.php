@@ -2,7 +2,7 @@
 
 use EmailVerifier\VerifyMail;
 
-require __DIR__."/../src/VerifyMail.php";
+require __DIR__."/../VerifyMail.php";
 
 $emailVerifier = new VerifyMail();
 
