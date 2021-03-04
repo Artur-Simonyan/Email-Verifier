@@ -4,16 +4,18 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitaa3755a3db322a0e51f3e49b39c31bd3
+class ComposerStaticInit6c42840d261796dd15f1b2baee6e0a2f
 {
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'EmailVerifier\\EmailVerifierConstants' => __DIR__ . '/../..' . '/src/EmailVerifierConstants.php',
+        'EmailVerifier\\VerifyMail' => __DIR__ . '/../..' . '/src/VerifyMail.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInitaa3755a3db322a0e51f3e49b39c31bd3::$classMap;
+            $loader->classMap = ComposerStaticInit6c42840d261796dd15f1b2baee6e0a2f::$classMap;
 
         }, null, ClassLoader::class);
     }
