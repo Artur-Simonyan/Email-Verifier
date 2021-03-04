@@ -1,0 +1,18 @@
+{
+  "name": "smnnartur/emailverifier",
+  "description": "Confirming the existence of e-mail by pinging mail",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Artur",
+      "email": "artur.simonyan.job@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1"
+  },
+  "autoload": {
+    "classmap": ["src"]
+  }
+}
